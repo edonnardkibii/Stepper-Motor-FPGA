@@ -1,0 +1,114 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Feb 18 17:39:25 2021
+# Process ID: 9636
+# Current directory: C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5804 C:\Users\james\OneDrive\Dokumente\Vivado\SoC_Projects\Stepper_Motor_v1\Stepper_Motor.xpr
+# Log file: C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/vivado.log
+# Journal file: C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/James Kibii/OneDrive/Dokumente/Vivado/Stepper_Motor' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:09 . Memory (MB): peak = 896.133 ; gain = 158.168
+open_bd_design {C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.srcs/sources_1/bd/system/system.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Successfully read diagram <system> from BD file <C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.srcs/sources_1/bd/system/system.bd>
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.srcs/sources_1/bd/system/system.bd]
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: stepper_motor_top_pwm
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1019.078 ; gain = 109.223
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'stepper_motor_top_pwm' [C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.srcs/sources_1/new/stepper_motor_top_pwm.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:22660]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [C:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:22660]
+INFO: [Synth 8-6157] synthesizing module 'system_wrapper' [C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.srcs/sources_1/bd/system/hdl/system_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'system' [C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.srcs/sources_1/bd/system/synth/system.v:13]
+INFO: [Synth 8-6157] synthesizing module 'system_processing_system7_0_0' [C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/.Xil/Vivado-9636-DESKTOP-P7J4UQ2/realtime/system_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_processing_system7_0_0' (2#1) [C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/.Xil/Vivado-9636-DESKTOP-P7J4UQ2/realtime/system_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system' (3#1) [C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.srcs/sources_1/bd/system/synth/system.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'system_wrapper' (4#1) [C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.srcs/sources_1/bd/system/hdl/system_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'spwm' [C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.srcs/sources_1/new/spwm.v:23]
+	Parameter time_div bound to: 11'b11111010000 
+	Parameter count_begin bound to: 16'b0000000000000000 
+	Parameter counter_max bound to: 16'b0111111111111111 
+INFO: [Synth 8-3876] $readmem data file 'sine_wave.mem' is read successfully [C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.srcs/sources_1/new/spwm.v:60]
+INFO: [Synth 8-3876] $readmem data file 'cos_wave.mem' is read successfully [C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.srcs/sources_1/new/spwm.v:61]
+WARNING: [Synth 8-6014] Unused sequential element sine_reg was removed.  [C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.srcs/sources_1/new/spwm.v:84]
+WARNING: [Synth 8-6014] Unused sequential element cos_reg was removed.  [C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.srcs/sources_1/new/spwm.v:85]
+INFO: [Synth 8-6155] done synthesizing module 'spwm' (5#1) [C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.srcs/sources_1/new/spwm.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'stepper_motor_top_pwm' (6#1) [C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.srcs/sources_1/new/stepper_motor_top_pwm.v:23]
+WARNING: [Synth 8-3331] design stepper_motor_top_pwm has unconnected port exp_p_io[7]
+WARNING: [Synth 8-3331] design stepper_motor_top_pwm has unconnected port exp_p_io[6]
+WARNING: [Synth 8-3331] design stepper_motor_top_pwm has unconnected port exp_p_io[5]
+WARNING: [Synth 8-3331] design stepper_motor_top_pwm has unconnected port exp_p_io[4]
+WARNING: [Synth 8-3331] design stepper_motor_top_pwm has unconnected port exp_p_io[3]
+WARNING: [Synth 8-3331] design stepper_motor_top_pwm has unconnected port exp_p_io[2]
+WARNING: [Synth 8-3331] design stepper_motor_top_pwm has unconnected port exp_p_io[1]
+WARNING: [Synth 8-3331] design stepper_motor_top_pwm has unconnected port exp_p_io[0]
+WARNING: [Synth 8-3331] design stepper_motor_top_pwm has unconnected port exp_n_io[7]
+WARNING: [Synth 8-3331] design stepper_motor_top_pwm has unconnected port exp_n_io[6]
+WARNING: [Synth 8-3331] design stepper_motor_top_pwm has unconnected port exp_n_io[5]
+WARNING: [Synth 8-3331] design stepper_motor_top_pwm has unconnected port exp_n_io[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1061.977 ; gain = 152.121
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1061.977 ; gain = 152.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1061.977 ; gain = 152.121
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.dcp' for cell 'system_wrapper_i/system_i/processing_system7_0'
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_wrapper_i/system_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_wrapper_i/system_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/stepper_motor_top_pwm_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/stepper_motor_top_pwm_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.srcs/constrs_1/new/Red_Pitaya.xdc]
+Finished Parsing XDC File [C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.srcs/constrs_1/new/Red_Pitaya.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:20 . Memory (MB): peak = 1419.094 ; gain = 509.238
+23 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:20 . Memory (MB): peak = 1419.094 ; gain = 509.238
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 18 17:41:21 2021...

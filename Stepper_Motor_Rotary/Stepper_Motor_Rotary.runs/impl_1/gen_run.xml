@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1614513141">
+  <File Type="BITSTR-BMM" Name="stepper_motor_rotary_top_bd.bmm"/>
+  <File Type="ROUTE-PWR" Name="stepper_motor_rotary_top_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="stepper_motor_rotary_top.tcl"/>
+  <File Type="OPT-DCP" Name="stepper_motor_rotary_top_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="stepper_motor_rotary_top_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="stepper_motor_rotary_top_reports.tcl"/>
+  <File Type="OPT-DRC" Name="stepper_motor_rotary_top_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="stepper_motor_rotary_top.hwdef"/>
+  <File Type="PWROPT-DCP" Name="stepper_motor_rotary_top_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="stepper_motor_rotary_top_placed.dcp"/>
+  <File Type="PLACE-IO" Name="stepper_motor_rotary_top_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="stepper_motor_rotary_top_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="stepper_motor_rotary_top_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="stepper_motor_rotary_top_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="stepper_motor_rotary_top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="stepper_motor_rotary_top.bgn"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="stepper_motor_rotary_top_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="stepper_motor_rotary_top.bin"/>
+  <File Type="PHYSOPT-DCP" Name="stepper_motor_rotary_top_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="stepper_motor_rotary_top.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="stepper_motor_rotary_top_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="stepper_motor_rotary_top_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="stepper_motor_rotary_top_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="stepper_motor_rotary_top_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="stepper_motor_rotary_top_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="stepper_motor_rotary_top.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="stepper_motor_rotary_top_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="stepper_motor_rotary_top.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="stepper_motor_rotary_top_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="stepper_motor_rotary_top_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="stepper_motor_rotary_top.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="stepper_motor_rotary_top_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="stepper_motor_rotary_top_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="stepper_motor_rotary_top_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="stepper_motor_rotary_top_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="stepper_motor_rotary_top_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="stepper_motor_rotary_top_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="stepper_motor_rotary_top_timing_summary_routed.rpx"/>
+  <File Type="RDI-RDI" Name="stepper_motor_rotary_top.vdi"/>
+  <File Type="ROUTE-CLK" Name="stepper_motor_rotary_top_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="stepper_motor_rotary_top_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="stepper_motor_rotary_top_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="stepper_motor_rotary_top_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="stepper_motor_rotary_top_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="stepper_motor_rotary_top_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="stepper_motor_rotary_top.bit"/>
+  <File Type="BITSTR-RBT" Name="stepper_motor_rotary_top.rbt"/>
+  <File Type="BITSTR-NKY" Name="stepper_motor_rotary_top.nky"/>
+  <File Type="BG-DRC" Name="stepper_motor_rotary_top.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/system/system.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/rotary_encoder.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/speed_ctrl.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/spwm.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/step_changer.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/system/hdl/system_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/stepper_motor_rotary_top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/cos_wave.mem">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/sine_wave.mem">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/steppermotor_tb.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="stepper_motor_rotary_top"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/Red_Pitaya.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="system_processing_system7_0_0"/>
+</GenRun>

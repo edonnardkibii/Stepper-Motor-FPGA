@@ -1,0 +1,15 @@
+verilog xil_defaultlib --include "../../../../Stepper_Motor_v3.srcs/sources_1/bd/system/ipshared/ec67/hdl" --include "../../../../Stepper_Motor_v3.srcs/sources_1/bd/system/ipshared/5bb9/hdl/verilog" --include "../../../../Stepper_Motor_v3.srcs/sources_1/bd/system/ipshared/70fd/hdl" \
+"../../../bd/system/ip/system_processing_system7_0_0/sim/system_processing_system7_0_0.v" \
+"../../../bd/system/ip/system_xadc_wiz_0_0/system_xadc_wiz_0_0.v" \
+"../../../bd/system/ip/system_xlconstant_0_0/sim/system_xlconstant_0_0.v" \
+"../../../bd/system/ip/system_xlconcat_0_0/sim/system_xlconcat_0_0.v" \
+"../../../../../../../Users/James Kibii/OneDrive/Dokumente/Vivado/Vector_Length_Mod_1/Vector_Length_Mod.srcs/sources_1/new/my_Vector_Length_Mod.v" \
+"../../../bd/system/ip/system_my_Vector_Length_Mod_0_0/sim/system_my_Vector_Length_Mod_0_0.v" \
+"../../../bd/system/ip/system_spwm_0_0/sim/system_spwm_0_0.v" \
+"../../../bd/system/ip/system_speed_ctrl_0_0/sim/system_speed_ctrl_0_0.v" \
+"../../../bd/system/ip/system_step_changer_0_0/sim/system_step_changer_0_0.v" \
+"../../../bd/system/sim/system.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

@@ -1,0 +1,87 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Feb 18 20:07:30 2021
+# Process ID: 9300
+# Current directory: C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Dig
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2924 C:\Users\james\OneDrive\Dokumente\Vivado\SoC_Projects\Stepper_Motor_Dig\Stepper_Motor_Dig.xpr
+# Log file: C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Dig/vivado.log
+# Journal file: C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Dig\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Dig/Stepper_Motor_Dig.xpr
+update_compile_order -fileset sources_1
+close [ open C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Dig/Stepper_Motor_Dig.srcs/sources_1/new/stepper_motor_dig_top.v w ]
+add_files C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Dig/Stepper_Motor_Dig.srcs/sources_1/new/stepper_motor_dig_top.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Dig/Stepper_Motor_Dig.srcs/sources_1/new/spwm.v w ]
+add_files C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Dig/Stepper_Motor_Dig.srcs/sources_1/new/spwm.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Dig/Stepper_Motor_Dig.srcs/sources_1/new/step_changer.v w ]
+add_files C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Dig/Stepper_Motor_Dig.srcs/sources_1/new/step_changer.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Dig/Stepper_Motor_Dig.srcs/sources_1/new/speed_ctrl.v w ]
+add_files C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Dig/Stepper_Motor_Dig.srcs/sources_1/new/speed_ctrl.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Dig/Stepper_Motor_Dig.srcs/sources_1/new/spwm_tb.v w ]
+add_files C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Dig/Stepper_Motor_Dig.srcs/sources_1/new/spwm_tb.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+source spwm_tb.tcl
+close_sim
+launch_simulation
+source spwm_tb.tcl
+config_webtalk -user on
+set_property -name {xsim.simulate.runtime} -value {100us} -objects [get_filesets sim_1]
+update_ip_catalog
+close_sim
+update_ip_catalog
+launch_simulation
+source spwm_tb.tcl
+close_sim
+launch_simulation
+source spwm_tb.tcl
+close_sim
+launch_simulation
+source spwm_tb.tcl
+close_sim
+create_bd_design "system"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+set_property -dict [list CONFIG.PCW_USE_M_AXI_GP0 {0}] [get_bd_cells processing_system7_0]
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins processing_system7_0/DDR]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_cells processing_system7_0]
+make_bd_intf_pins_external  [get_bd_cells processing_system7_0]
+endgroup
+set_property name DDR [get_bd_intf_ports DDR_0]
+set_property name FIXED_IO [get_bd_intf_ports FIXED_IO_0]
+set_property name FCLK_CLK0 [get_bd_ports FCLK_CLK0_0]
+set_property name FCLK_RESET0_N [get_bd_ports FCLK_RESET0_N_0]
+save_bd_design
+generate_target all [get_files  C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Dig/Stepper_Motor_Dig.srcs/sources_1/bd/system/system.bd]
+catch { config_ip_cache -export [get_ips -all system_processing_system7_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Dig/Stepper_Motor_Dig.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Dig/Stepper_Motor_Dig.srcs/sources_1/bd/system/system.bd]
+launch_runs -jobs 4 system_processing_system7_0_0_synth_1
+export_simulation -of_objects [get_files C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Dig/Stepper_Motor_Dig.srcs/sources_1/bd/system/system.bd] -directory C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Dig/Stepper_Motor_Dig.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Dig/Stepper_Motor_Dig.ip_user_files -ipstatic_source_dir C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Dig/Stepper_Motor_Dig.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Dig/Stepper_Motor_Dig.cache/compile_simlib/modelsim} {questa=C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Dig/Stepper_Motor_Dig.cache/compile_simlib/questa} {riviera=C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Dig/Stepper_Motor_Dig.cache/compile_simlib/riviera} {activehdl=C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Dig/Stepper_Motor_Dig.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Dig/Stepper_Motor_Dig.srcs/sources_1/bd/system/system.bd] -top
+add_files -norecurse C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Dig/Stepper_Motor_Dig.srcs/sources_1/bd/system/hdl/system_wrapper.v
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top stepper_motor_dig_top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+source spwm_tb.tcl
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Dig/Stepper_Motor_Dig.srcs/sources_1/bd/system/system.bd]
+synth_design -rtl -name rtl_1
+close_sim

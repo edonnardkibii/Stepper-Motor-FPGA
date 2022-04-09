@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../unipolar_stepper_motor.srcs/sources_1/bd/system/ipshared/ec67/hdl" --include "../../../../unipolar_stepper_motor.srcs/sources_1/bd/system/ipshared/5bb9/hdl/verilog" --include "../../../../unipolar_stepper_motor.srcs/sources_1/bd/system/ipshared/70fd/hdl" --include "C:/Xilinx/Vivado/2018.2/data/xilinx_vip/include" \
+"../../../../unipolar_stepper_motor.ip_user_files/bd/system/ip/system_processing_system7_0_0/sim/system_processing_system7_0_0.v" \
+"../../../../unipolar_stepper_motor.ip_user_files/bd/system/sim/system.v" \
+"../../../../unipolar_stepper_motor.srcs/sources_1/new/rotary_encoder.v" \
+"../../../../unipolar_stepper_motor.srcs/sources_1/new/speed_ctrl.v" \
+"../../../../unipolar_stepper_motor.srcs/sources_1/new/spwm.v" \
+"../../../../unipolar_stepper_motor.srcs/sources_1/new/step_changer.v" \
+"../../../../unipolar_stepper_motor.srcs/sources_1/bd/system/hdl/system_wrapper.v" \
+"../../../../unipolar_stepper_motor.srcs/sources_1/new/unipolar_stepper_motor_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

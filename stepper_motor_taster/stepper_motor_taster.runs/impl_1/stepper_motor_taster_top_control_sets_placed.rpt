@@ -1,0 +1,79 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Fri Feb 19 19:06:14 2021
+| Host         : DESKTOP-P7J4UQ2 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file stepper_motor_taster_top_control_sets_placed.rpt
+| Design       : stepper_motor_taster_top
+| Device       : xc7z010
+-----------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    12 |
+| Unused register locations in slices containing registers |    50 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            5 |
+|      6 |            1 |
+|     10 |            1 |
+|    16+ |            5 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              78 |           25 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             176 |           31 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              24 |            4 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------------------------+--------------------------------------+------------------------------------+------------------+----------------+
+|                          Clock Signal                          |             Enable Signal            |          Set/Reset Signal          | Slice Load Count | Bel Load Count |
++----------------------------------------------------------------+--------------------------------------+------------------------------------+------------------+----------------+
+|  system_wrapper_i/system_i/processing_system7_0/inst/FCLK_CLK0 |                                      |                                    |                1 |              2 |
+|  new_clock_BUFG                                                |                                      | i_spwm/pwm_b_n_i_1_n_0             |                1 |              2 |
+|  new_clock_BUFG                                                |                                      | i_spwm/pwm_b_p_i_1_n_0             |                1 |              2 |
+|  new_clock_BUFG                                                |                                      | i_spwm/p_0_in_0                    |                1 |              2 |
+|  new_clock_BUFG                                                |                                      | i_spwm/i[9]                        |                1 |              2 |
+|  exp_iobuf[0].i_iobufn/O                                       |                                      |                                    |                2 |              6 |
+|  i_step_changer/step_type_inferred__0/i__n_0                   |                                      |                                    |                2 |             10 |
+|  new_clock_BUFG                                                |                                      | i_spwm/counter_reg[8]              |                4 |             18 |
+|  system_wrapper_i/system_i/processing_system7_0/inst/FCLK_CLK0 |                                      | i_speed_ctrl/counter0_carry__2_n_0 |                3 |             22 |
+|  system_wrapper_i/system_i/processing_system7_0/inst/FCLK_CLK0 | i_speed_ctrl/time_divider[0]_i_2_n_0 | i_speed_ctrl/time_divider          |                4 |             24 |
+|  new_clock_BUFG                                                |                                      |                                    |               20 |             60 |
+|  new_clock_BUFG                                                |                                      | i_spwm/clear                       |               20 |            128 |
++----------------------------------------------------------------+--------------------------------------+------------------------------------+------------------+----------------+
+
+

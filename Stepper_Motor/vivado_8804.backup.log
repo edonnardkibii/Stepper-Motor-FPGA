@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Feb  4 19:55:39 2021
+# Process ID: 8804
+# Current directory: C:/Users/James Kibii/OneDrive/Dokumente/Vivado/Stepper_Motor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2448 C:\Users\James Kibii\OneDrive\Dokumente\Vivado\Stepper_Motor\Stepper_Motor.xpr
+# Log file: C:/Users/James Kibii/OneDrive/Dokumente/Vivado/Stepper_Motor/vivado.log
+# Journal file: C:/Users/James Kibii/OneDrive/Dokumente/Vivado/Stepper_Motor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/James Kibii/OneDrive/Dokumente/Vivado/Stepper_Motor/Stepper_Motor.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/James Kibii/OneDrive/Dokumente/Vivado/Vector_Length_Mod/Vector_Length_Mod.srcs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 897.953 ; gain = 151.496
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/James Kibii/OneDrive/Dokumente/Vivado/Stepper_Motor/Stepper_Motor.srcs/sources_1/bd/system/system.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:xadc_wiz:3.3 - xadc_wiz_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding cell -- xilinx.com:module_ref:speed_ctrl:1.0 - speed_ctrl_0
+Successfully read diagram <system> from BD file <C:/Users/James Kibii/OneDrive/Dokumente/Vivado/Stepper_Motor/Stepper_Motor.srcs/sources_1/bd/system/system.bd>
+update_ip_catalog -delete_ip xilinx.com:user:my_Vector_Length_Mod:1.0 -repo_path {c:/Users/James Kibii/OneDrive/Dokumente/Vivado/Vector_Length_Mod/Vector_Length_Mod.srcs}
+WARNING: [IP_Flow 19-881] Failed to delete file 'c:/Users/kibii/OneDrive/Studienkolleg/Vivado/Vector_Length_Mod/Vector_Length_Mod.srcs/sources_1/new/my_Vector_Length_Mod.v' because it doesn't exist.
+INFO: [IP_Flow 19-1659] Deleted IP 'xilinx.com:user:my_Vector_Length_Mod:1.0' from repository 'c:/Users/James Kibii/OneDrive/Dokumente/Vivado/Vector_Length_Mod/Vector_Length_Mod.srcs' at c:/Users/James Kibii/OneDrive/Dokumente/Vivado/Vector_Length_Mod/Vector_Length_Mod.srcs/sources_1/new.
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/James Kibii/OneDrive/Dokumente/Vivado/Vector_Length_Mod/Vector_Length_Mod.srcs'

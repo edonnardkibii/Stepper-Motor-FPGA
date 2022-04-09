@@ -1,0 +1,682 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Jan 22 23:34:07 2021
+# Process ID: 3632
+# Current directory: C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3972 C:\Users\kibii\OneDrive\Studienkolleg\Vivado\Stepper_PWM\Stepper_PWM.xpr
+# Log file: C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/vivado.log
+# Journal file: C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:18 . Memory (MB): peak = 789.797 ; gain = 106.801
+update_compile_order -fileset sources_1
+close [ open C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/new/Stepper_top.v w ]
+add_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/new/Stepper_top.v
+update_compile_order -fileset sources_1
+create_bd_design "Stepper"
+Wrote  : <C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/bd/Stepper/Stepper.bd> 
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+create_bd_cell: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 910.551 ; gain = 53.250
+endgroup
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+set_property -dict [list CONFIG.PCW_USE_M_AXI_GP0 {0}] [get_bd_cells processing_system7_0]
+set_property location {1 206 -208} [get_bd_cells processing_system7_0]
+WARNING: [Boardtcl 53-1] No current board_part set.
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_cells processing_system7_0]
+make_bd_intf_pins_external  [get_bd_cells processing_system7_0]
+endgroup
+set_property name FCLK_CLK0 [get_bd_ports FCLK_CLK0_0]
+set_property name FCLK_RESET0_N [get_bd_ports FCLK_RESET0_N_0]
+save_bd_design
+Wrote  : <C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/bd/Stepper/Stepper.bd> 
+Wrote  : <C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/bd/Stepper/ui/bd_d2a3a851.ui> 
+make_wrapper -files [get_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/bd/Stepper/Stepper.bd] -top
+Wrote  : <C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/bd/Stepper/Stepper.bd> 
+VHDL Output written to : C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/bd/Stepper/synth/Stepper.v
+VHDL Output written to : C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/bd/Stepper/sim/Stepper.v
+VHDL Output written to : C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/bd/Stepper/hdl/Stepper_wrapper.v
+add_files -norecurse C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/bd/Stepper/hdl/Stepper_wrapper.v
+update_compile_order -fileset sources_1
+generate_target all [get_files  C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/bd/Stepper/Stepper.bd]
+INFO: [BD 41-1662] The design 'Stepper.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/bd/Stepper/synth/Stepper.v
+VHDL Output written to : C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/bd/Stepper/sim/Stepper.v
+VHDL Output written to : C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/bd/Stepper/hdl/Stepper_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+Exporting to file C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/bd/Stepper/hw_handoff/Stepper.hwh
+Generated Block Design Tcl file C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/bd/Stepper/hw_handoff/Stepper_bd.tcl
+Generated Hardware Definition File C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/bd/Stepper/synth/Stepper.hwdef
+generate_target: Time (s): cpu = 00:00:29 ; elapsed = 00:00:28 . Memory (MB): peak = 1105.859 ; gain = 103.562
+catch { config_ip_cache -export [get_ips -all Stepper_processing_system7_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/bd/Stepper/Stepper.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/bd/Stepper/Stepper.bd]
+launch_runs -jobs 4 Stepper_processing_system7_0_0_synth_1
+[Fri Jan 22 23:50:28 2021] Launched Stepper_processing_system7_0_0_synth_1...
+Run output will be captured here: C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.runs/Stepper_processing_system7_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/bd/Stepper/Stepper.bd] -directory C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.ip_user_files -ipstatic_source_dir C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.cache/compile_simlib/modelsim} {questa=C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.cache/compile_simlib/questa} {riviera=C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.cache/compile_simlib/riviera} {activehdl=C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/bd/Stepper/Stepper.bd] -top
+set_property top Stepper_top [current_fileset]
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/bd/Stepper/Stepper.bd}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property top Stepper_top [current_fileset]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/new/Stepper_top.v] -no_script -reset -force -quiet
+remove_files  C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/new/Stepper_top.v
+file delete -force C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/new/Stepper_top.v
+update_compile_order -fileset sources_1
+set_property top Stepper_wrapper [current_fileset]
+update_compile_order -fileset sources_1
+create_project SPWM C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM -part xc7z010iclg400-1L
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1151.762 ; gain = 0.000
+file mkdir C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/new
+close [ open C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/new/SPWM.v w ]
+add_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/new/SPWM.v
+update_compile_order -fileset sources_1
+current_project Stepper_PWM
+current_project SPWM
+close [ open C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/new/SPWM_tb.v w ]
+add_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/new/SPWM_tb.v
+update_compile_order -fileset sources_1
+current_project Stepper_PWM
+current_project SPWM
+update_compile_order -fileset sources_1
+close [ open C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/new/sine_wave.mem w ]
+add_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/new/sine_wave.mem
+current_project Stepper_PWM
+current_project SPWM
+file mkdir C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/constrs_1
+file mkdir C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/constrs_1/new
+close [ open C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/constrs_1/new/Red_Pitaya.xdc w ]
+add_files -fileset constrs_1 C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/constrs_1/new/Red_Pitaya.xdc
+current_project Stepper_PWM
+current_project SPWM
+create_bd_design "System"
+Wrote  : <C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/System.bd> 
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+set_property -dict [list CONFIG.PCW_USE_M_AXI_GP0 {0}] [get_bd_cells processing_system7_0]
+startgroup
+make_bd_pins_external  [get_bd_cells processing_system7_0]
+make_bd_intf_pins_external  [get_bd_cells processing_system7_0]
+endgroup
+set_property name DDR [get_bd_intf_ports DDR_0]
+undo
+INFO: [Common 17-17] undo 'set_property name DDR [get_bd_intf_ports DDR_0]'
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'make_bd_intf_pins_external  [get_bd_cells processing_system7_0]'
+INFO: [Common 17-17] undo 'make_bd_pins_external  [get_bd_cells processing_system7_0]'
+INFO: [Common 17-17] undo 'startgroup'
+undo
+INFO: [Common 17-17] undo 'set_property -dict [list CONFIG.PCW_USE_M_AXI_GP0 {0}] [get_bd_cells processing_system7_0]'
+INFO: [Common 17-365] Interrupt caught but 'common::undo' cannot be canceled. Please wait for command to finish.
+undo: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1343.457 ; gain = 24.613
+INFO: [Common 17-681] Processing pending cancel.
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+set_property -dict [list CONFIG.PCW_USE_M_AXI_GP0 {0}] [get_bd_cells processing_system7_0]
+WARNING: [Boardtcl 53-1] No current board_part set.
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins processing_system7_0/FCLK_CLK0]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins processing_system7_0/FCLK_RESET0_N]
+endgroup
+set_property name FCLK_CLK0 [get_bd_ports FCLK_CLK0_0]
+set_property name FCLK_RESET0_N [get_bd_ports FCLK_RESET0_N_0]
+save_bd_design
+Wrote  : <C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/System.bd> 
+Wrote  : <C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/ui/bd_671e18af.ui> 
+generate_target all [get_files  C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/System.bd]
+Wrote  : <C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/System.bd> 
+VHDL Output written to : C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/synth/System.v
+VHDL Output written to : C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/sim/System.v
+VHDL Output written to : C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/hdl/System_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+Exporting to file C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/hw_handoff/System.hwh
+Generated Block Design Tcl file C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/hw_handoff/System_bd.tcl
+Generated Hardware Definition File C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/synth/System.hwdef
+generate_target: Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1404.426 ; gain = 60.969
+catch { config_ip_cache -export [get_ips -all System_processing_system7_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/System.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/System.bd]
+launch_runs -jobs 4 System_processing_system7_0_0_synth_1
+[Sat Jan 23 01:00:24 2021] Launched System_processing_system7_0_0_synth_1...
+Run output will be captured here: C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.runs/System_processing_system7_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/System.bd] -directory C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.ip_user_files -ipstatic_source_dir C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.cache/compile_simlib/modelsim} {questa=C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.cache/compile_simlib/questa} {riviera=C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.cache/compile_simlib/riviera} {activehdl=C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/System.bd] -top
+add_files -norecurse C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/hdl/System_wrapper.v
+update_compile_order -fileset sources_1
+set_property top System_wrapper [current_fileset]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+[Sat Jan 23 01:15:32 2021] Launched synth_1...
+Run output will be captured here: C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sat Jan 23 01:17:59 2021] Launched impl_1...
+Run output will be captured here: C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Jan 23 01:20:01 2021] Launched impl_1...
+Run output will be captured here: C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.runs/impl_1/runme.log
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/System.bd]
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z010iclg400-1L
+Top: System_wrapper
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1447.145 ; gain = 42.719
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'System_wrapper' [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/hdl/System_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'SPWM' [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/new/SPWM.v:23]
+	Parameter counter_max bound to: 16'b1111111111111111 
+INFO: [Synth 8-3876] $readmem data file 'sine_wave.mem' is read successfully [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/new/SPWM.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'SPWM' (1#1) [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/new/SPWM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'System' [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/synth/System.v:13]
+INFO: [Synth 8-6157] synthesizing module 'System_processing_system7_0_0' [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/.Xil/Vivado-3632-LAPTOP-8T04MTTM/realtime/System_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'System_processing_system7_0_0' (2#1) [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/.Xil/Vivado-3632-LAPTOP-8T04MTTM/realtime/System_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'System' (3#1) [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/synth/System.v:13]
+WARNING: [Synth 8-3848] Net CLK in module/entity System_wrapper does not have driver. [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/hdl/System_wrapper.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'System_wrapper' (4#1) [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/hdl/System_wrapper.v:12]
+WARNING: [Synth 8-3331] design System_wrapper has unconnected port dac_pwm_o[2]
+WARNING: [Synth 8-3331] design System_wrapper has unconnected port dac_pwm_o[1]
+WARNING: [Synth 8-3331] design System_wrapper has unconnected port dac_pwm_o[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1490.395 ; gain = 85.969
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin spwm_i:clk to constant 0 [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/hdl/System_wrapper.v:95]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1490.395 ; gain = 85.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1490.395 ; gain = 85.969
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0.dcp' for cell 'System_i/processing_system7_0'
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7z010iclg400-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 2 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0.xdc] for cell 'System_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0.xdc] for cell 'System_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/System_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/System_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/constrs_1/new/Red_Pitaya.xdc]
+Finished Parsing XDC File [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/constrs_1/new/Red_Pitaya.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/constrs_1/new/Red_Pitaya.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/System_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/System_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:43 ; elapsed = 00:00:29 . Memory (MB): peak = 1803.180 ; gain = 398.754
+18 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:29 . Memory (MB): peak = 1803.180 ; gain = 398.754
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/System.bd]
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1833.383 ; gain = 21.875
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'System_wrapper' [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/hdl/System_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'SPWM' [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/new/SPWM.v:23]
+	Parameter counter_max bound to: 16'b1111111111111111 
+INFO: [Synth 8-3876] $readmem data file 'sine_wave.mem' is read successfully [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/new/SPWM.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'SPWM' (1#1) [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/new/SPWM.v:23]
+INFO: [Synth 8-6157] synthesizing module 'System' [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/synth/System.v:13]
+INFO: [Synth 8-6157] synthesizing module 'System_processing_system7_0_0' [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/.Xil/Vivado-3632-LAPTOP-8T04MTTM/realtime/System_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'System_processing_system7_0_0' (2#1) [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/.Xil/Vivado-3632-LAPTOP-8T04MTTM/realtime/System_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'System' (3#1) [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/synth/System.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'System_wrapper' (4#1) [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/hdl/System_wrapper.v:12]
+WARNING: [Synth 8-3331] design System_wrapper has unconnected port dac_pwm_o[2]
+WARNING: [Synth 8-3331] design System_wrapper has unconnected port dac_pwm_o[1]
+WARNING: [Synth 8-3331] design System_wrapper has unconnected port dac_pwm_o[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1852.418 ; gain = 40.910
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1852.418 ; gain = 40.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1852.418 ; gain = 40.910
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0.dcp' for cell 'System_i/processing_system7_0'
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 2 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0.xdc] for cell 'System_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0.xdc] for cell 'System_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/ip/System_processing_system7_0_0/System_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/System_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/System_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/constrs_1/new/Red_Pitaya.xdc]
+Finished Parsing XDC File [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/constrs_1/new/Red_Pitaya.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/constrs_1/new/Red_Pitaya.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/System_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/System_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:19 . Memory (MB): peak = 1868.527 ; gain = 57.020
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sat Jan 23 01:26:01 2021] Launched synth_1...
+Run output will be captured here: C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sat Jan 23 01:27:31 2021] Launched impl_1...
+Run output will be captured here: C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Jan 23 01:29:30 2021] Launched impl_1...
+Run output will be captured here: C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.runs/impl_1/runme.log
+current_project Stepper_PWM
+close_project
+close [ open C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/new/Stepper_top.v w ]
+add_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/new/Stepper_top.v
+update_compile_order -fileset sources_1
+create_project Stepper_Motor_PWM C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM -part xc7z010clg400-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1868.527 ; gain = 0.000
+file mkdir C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/constrs_1
+file mkdir C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/constrs_1/new
+close [ open C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/constrs_1/new/Red_Pitaya.xdc w ]
+add_files -fileset constrs_1 C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/constrs_1/new/Red_Pitaya.xdc
+current_project SPWM
+current_project Stepper_Motor_PWM
+file mkdir C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/new
+close [ open C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/new/spwm.v w ]
+add_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/new/spwm.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/new/stepper_motor_top.v w ]
+add_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/new/stepper_motor_top.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/new/spwm_tb.v w ]
+add_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/new/spwm_tb.v
+update_compile_order -fileset sources_1
+current_project SPWM
+current_project Stepper_Motor_PWM
+current_project SPWM
+current_project Stepper_Motor_PWM
+update_compile_order -fileset sources_1
+close [ open C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/new/sine_wave.mem w ]
+add_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/new/sine_wave.mem
+current_project SPWM
+current_project Stepper_Motor_PWM
+create_bd_design "system"
+Wrote  : <C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/bd/system/system.bd> 
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+create_bd_cell: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1868.527 ; gain = 0.000
+endgroup
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+set_property -dict [list CONFIG.PCW_USE_M_AXI_GP0 {0}] [get_bd_cells processing_system7_0]
+WARNING: [Boardtcl 53-1] No current board_part set.
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins processing_system7_0/FCLK_CLK0]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins processing_system7_0/FCLK_RESET0_N]
+endgroup
+set_property name FCLK_CLK0 [get_bd_ports FCLK_CLK0_0]
+set_property name FCLK_RESET0_N [get_bd_ports FCLK_RESET0_N_0]
+generate_target all [get_files  C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/bd/system/system.bd]
+Wrote  : <C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/bd/system/system.bd> 
+Wrote  : <C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+VHDL Output written to : C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/bd/system/synth/system.v
+VHDL Output written to : C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/bd/system/sim/system.v
+VHDL Output written to : C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/bd/system/hdl/system_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+Exporting to file C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/bd/system/synth/system.hwdef
+generate_target: Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2020.793 ; gain = 52.625
+catch { config_ip_cache -export [get_ips -all system_processing_system7_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/bd/system/system.bd]
+launch_runs -jobs 4 system_processing_system7_0_0_synth_1
+[Sat Jan 23 01:51:02 2021] Launched system_processing_system7_0_0_synth_1...
+Run output will be captured here: C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.runs/system_processing_system7_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/bd/system/system.bd] -directory C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.ip_user_files -ipstatic_source_dir C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.cache/compile_simlib/modelsim} {questa=C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.cache/compile_simlib/questa} {riviera=C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.cache/compile_simlib/riviera} {activehdl=C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+current_project SPWM
+current_project Stepper_Motor_PWM
+current_project SPWM
+close_project
+open_bd_design {C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/bd/system/system.bd}
+make_wrapper -files [get_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/bd/system/system.bd] -top
+add_files -norecurse C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/bd/system/hdl/system_wrapper.v
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+[Sat Jan 23 02:08:47 2021] Launched synth_1...
+Run output will be captured here: C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sat Jan 23 02:09:49 2021] Launched impl_1...
+Run output will be captured here: C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.runs/impl_1/runme.log
+set_property top stepper_motor_top [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sat Jan 23 02:13:10 2021] Launched synth_1...
+Run output will be captured here: C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sat Jan 23 02:14:16 2021] Launched impl_1...
+Run output will be captured here: C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Jan 23 02:15:58 2021] Launched impl_1...
+Run output will be captured here: C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.446 . Memory (MB): peak = 2365.047 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.446 . Memory (MB): peak = 2365.047 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:31 ; elapsed = 00:00:30 . Memory (MB): peak = 2412.934 ; gain = 392.141
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sat Jan 23 02:19:48 2021] Launched synth_1...
+Run output will be captured here: C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sat Jan 23 02:21:54 2021] Launched impl_1...
+Run output will be captured here: C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.runs/impl_1/runme.log
+close_design
+close_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2431.125 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Jan 23 02:24:08 2021] Launched impl_1...
+Run output will be captured here: C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 126 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.414 . Memory (MB): peak = 2446.648 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.415 . Memory (MB): peak = 2446.648 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2446.648 ; gain = 15.523
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'spwm_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.sim/sim_1/behav/xsim/sine_wave.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L smartconnect_v1_0 -L axi_protocol_checker_v2_0_3 -L axi_vip_v1_1_3 -L processing_system7_vip_v1_0_5 -L xilinx_vip -prj spwm_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/new/spwm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spwm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/new/spwm_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spwm_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 604535817434473bb0f5649ed4d6494b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot spwm_tb_behav xil_defaultlib.spwm_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spwm
+Compiling module xil_defaultlib.spwm_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot spwm_tb_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.sim/sim_1/behav/xsim/xsim.dir/spwm_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Jan 23 02:42:50 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 2447.270 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "spwm_tb_behav -key {Behavioral:sim_1:Functional:spwm_tb} -tclbatch {spwm_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source spwm_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'spwm_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:22 . Memory (MB): peak = 2457.188 ; gain = 10.539
+set_property -name {xsim.simulate.runtime} -value {100us} -objects [get_filesets sim_1]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/new/spwm_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/bd/system/hdl/system_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/new/spwm.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/new/stepper_motor_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/bd/system/synth/system.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/new/spwm_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/bd/system/hdl/system_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/new/spwm.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/new/stepper_motor_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/bd/system/synth/system.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/new/spwm_tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/bd/system/hdl/system_wrapper.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/new/spwm.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/new/stepper_motor_top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/bd/system/synth/system.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2474.320 ; gain = 0.000
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'spwm_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.sim/sim_1/behav/xsim/sine_wave.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L smartconnect_v1_0 -L axi_protocol_checker_v2_0_3 -L axi_vip_v1_1_3 -L processing_system7_vip_v1_0_5 -L xilinx_vip -prj spwm_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 604535817434473bb0f5649ed4d6494b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot spwm_tb_behav xil_defaultlib.spwm_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "spwm_tb_behav -key {Behavioral:sim_1:Functional:spwm_tb} -tclbatch {spwm_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source spwm_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'spwm_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100us
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2474.320 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Sat Jan 23 02:48:42 2021] Launched synth_1...
+Run output will be captured here: C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sat Jan 23 02:49:57 2021] Launched impl_1...
+Run output will be captured here: C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Jan 23 02:52:35 2021] Launched impl_1...
+Run output will be captured here: C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Sat Jan 23 03:10:09 2021] Launched synth_1...
+Run output will be captured here: C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Sat Jan 23 03:11:32 2021] Launched impl_1...
+Run output will be captured here: C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Jan 23 03:13:31 2021] Launched impl_1...
+Run output will be captured here: C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'spwm_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.sim/sim_1/behav/xsim/sine_wave.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L smartconnect_v1_0 -L axi_protocol_checker_v2_0_3 -L axi_vip_v1_1_3 -L processing_system7_vip_v1_0_5 -L xilinx_vip -prj spwm_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 604535817434473bb0f5649ed4d6494b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot spwm_tb_behav xil_defaultlib.spwm_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "spwm_tb_behav -key {Behavioral:sim_1:Functional:spwm_tb} -tclbatch {spwm_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source spwm_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'spwm_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100us
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 2476.875 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2476.875 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jan 23 03:22:00 2021...

@@ -1,0 +1,79 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Feb  4 14:19:50 2021
+| Host         : DESKTOP-6VD7SQA running 64-bit major release  (build 9200)
+| Command      : report_drc -file stepper_motor_top_pwm_drc_routed.rpt -pb stepper_motor_top_pwm_drc_routed.pb -rpx stepper_motor_top_pwm_drc_routed.rpx
+| Design       : stepper_motor_top_pwm
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 8
++----------+------------------+------------------------------------------------+------------+
+| Rule     | Severity         | Description                                    | Violations |
++----------+------------------+------------------------------------------------+------------+
+| UCIO-1   | Critical Warning | Unconstrained Logical Port                     | 1          |
+| BUFC-1   | Warning          | Input Buffer Connections                       | 4          |
+| PDRC-153 | Warning          | Gated clock check                              | 1          |
+| PLIO-3   | Warning          | Placement Constraints Check for IO constraints | 2          |
++----------+------------------+------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+UCIO-1#1 Critical Warning
+Unconstrained Logical Port  
+16 out of 153 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: do_out[15:0].
+Related violations: <none>
+
+BUFC-1#1 Warning
+Input Buffer Connections  
+Input buffer exp_iobuf[1].i_iobufn/IBUF (in exp_iobuf[1].i_iobufn macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#2 Warning
+Input Buffer Connections  
+Input buffer exp_iobuf[2].i_iobufn/IBUF (in exp_iobuf[2].i_iobufn macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#3 Warning
+Input Buffer Connections  
+Input buffer exp_iobuf[3].i_iobufn/IBUF (in exp_iobuf[3].i_iobufn macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#4 Warning
+Input Buffer Connections  
+Input buffer exp_iobuf[4].i_iobufn/IBUF (in exp_iobuf[4].i_iobufn macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net i_step_changer/step_type_inferred__0/i__n_0 is a gated clock net sourced by a combinational pin i_step_changer/step_type_inferred__0/i_/O, cell i_step_changer/step_type_inferred__0/i_. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PLIO-3#1 Warning
+Placement Constraints Check for IO constraints  
+Partially locked IO Bus is found. Following components of the IO Bus vinn_i[4:0] are not locked:  vinn_i[4]
+Related violations: <none>
+
+PLIO-3#2 Warning
+Placement Constraints Check for IO constraints  
+Partially locked IO Bus is found. Following components of the IO Bus vinp_i[4:0] are not locked:  vinp_i[4]
+Related violations: <none>
+
+

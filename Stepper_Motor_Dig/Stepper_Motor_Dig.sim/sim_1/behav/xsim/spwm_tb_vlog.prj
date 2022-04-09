@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Stepper_Motor_Dig.srcs/sources_1/bd/system/ipshared/ec67/hdl" --include "../../../../Stepper_Motor_Dig.srcs/sources_1/bd/system/ipshared/5bb9/hdl/verilog" --include "../../../../Stepper_Motor_Dig.srcs/sources_1/bd/system/ipshared/70fd/hdl" --include "C:/Xilinx/Vivado/2018.2/data/xilinx_vip/include" \
+"../../../../Stepper_Motor_Dig.srcs/sources_1/new/spwm.v" \
+"../../../../Stepper_Motor_Dig.srcs/sources_1/new/spwm_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

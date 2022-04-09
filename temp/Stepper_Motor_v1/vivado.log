@@ -1,0 +1,102 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Feb 18 20:12:54 2021
+# Process ID: 10956
+# Current directory: C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8408 C:\Users\james\OneDrive\Dokumente\Vivado\SoC_Projects\Stepper_Motor_v1\Stepper_Motor.xpr
+# Log file: C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/vivado.log
+# Journal file: C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/James Kibii/OneDrive/Dokumente/Vivado/Stepper_Motor' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:09 . Memory (MB): peak = 893.180 ; gain = 136.559
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'spwm_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.sim/sim_1/behav/xsim/sine_wave.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.sim/sim_1/behav/xsim/cos_wave.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L smartconnect_v1_0 -L axi_protocol_checker_v2_0_3 -L axi_vip_v1_1_3 -L processing_system7_vip_v1_0_5 -L xilinx_vip -prj spwm_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.ip_user_files/bd/system/ip/system_processing_system7_0_0/sim/system_processing_system7_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_processing_system7_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.srcs/sources_1/new/spwm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spwm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.ip_user_files/bd/system/sim/system.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.srcs/sources_1/bd/system/hdl/system_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module system_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.srcs/sources_1/new/stepper_motor_top_pwm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stepper_motor_top_pwm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.srcs/sources_1/new/spwm_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spwm_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 1b3f4ce2f4dd4047bb764c1300d3d70f --incr --debug typical --relax --mt 2 -L axi_infrastructure_v1_1_0 -L smartconnect_v1_0 -L axi_protocol_checker_v2_0_3 -L axi_vip_v1_1_3 -L processing_system7_vip_v1_0_5 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot spwm_tb_behav xil_defaultlib.spwm_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spwm
+Compiling module xil_defaultlib.spwm_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot spwm_tb_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.sim/sim_1/behav/xsim/xsim.dir/spwm_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Feb 18 20:22:48 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_v1/Stepper_Motor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "spwm_tb_behav -key {Behavioral:sim_1:Functional:spwm_tb} -tclbatch {spwm_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source spwm_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100ms
+run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 928.945 ; gain = 0.000
+xsim: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 928.945 ; gain = 5.367
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'spwm_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100ms
+launch_simulation: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 928.945 ; gain = 16.176
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 19 12:26:09 2021...

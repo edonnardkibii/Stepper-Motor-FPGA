@@ -1,0 +1,111 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 13868
+License: Customer
+
+Current time: 	Thu Feb 04 20:01:58 CET 2021
+Time zone: 	Central European Time (Europe/Berlin)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1280x720
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 92 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	James Kibii
+User home directory: C:/Users/James Kibii
+User working directory: C:/Users/James Kibii/OneDrive/Dokumente/Vivado/Stepper_Motor
+User country: 	DE
+User language: 	de
+User locale: 	de_DE
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/James Kibii/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/James Kibii/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/James Kibii/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/James Kibii/OneDrive/Dokumente/Vivado/Stepper_Motor/vivado.log
+Vivado journal file location: 	C:/Users/James Kibii/OneDrive/Dokumente/Vivado/Stepper_Motor/vivado.jou
+Engine tmp dir: 	C:/Users/James Kibii/OneDrive/Dokumente/Vivado/Stepper_Motor/.Xil/Vivado-13868-DESKTOP-6VD7SQA
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	201 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 553 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 61 MB (+61805kb) [00:00:08]
+// [Engine Memory]: 496 MB (+368691kb) [00:00:08]
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\James Kibii\OneDrive\Dokumente\Vivado\Stepper_Motor\Stepper_Motor.xpr. Version: Vivado v2018.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/James Kibii/OneDrive/Dokumente/Vivado/Stepper_Motor/Stepper_Motor.xpr} 
+// [Engine Memory]: 531 MB (+10378kb) [00:00:09]
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_CURRENT
+// HMemoryUtils.trashcanNow. Engine heap size: 588 MB. GUI used memory: 39 MB. Current time: 2/4/21 8:02:00 PM CET
+// [Engine Memory]: 614 MB (+59790kb) [00:00:14]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 655 MB (+10860kb) [00:00:18]
+// Tcl Message: open_project {C:/Users/James Kibii/OneDrive/Dokumente/Vivado/Stepper_Motor/Stepper_Motor.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/James Kibii/OneDrive/Dokumente/Vivado/Vector_Length_Mod/Vector_Length_Mod.srcs'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// [GUI Memory]: 70 MB (+5366kb) [00:00:20]
+// Tcl Message: open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 880.031 ; gain = 132.863 
+// Project name: Stepper_Motor; location: C:/Users/James Kibii/OneDrive/Dokumente/Vivado/Stepper_Motor; part: xc7z010clg400-1
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 77 MB (+3772kb) [00:00:26]
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// RDIResource.RDIViews_PROPERTIES: Properties: close view
+// Elapsed time: 38 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN

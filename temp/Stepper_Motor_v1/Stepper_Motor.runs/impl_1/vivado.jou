@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Jan 29 14:36:29 2021
+# Process ID: 13440
+# Current directory: C:/Users/James Kibii/OneDrive/Dokumente/Vivado/Stepper_Motor/Stepper_Motor.runs/impl_1
+# Command line: vivado.exe -log stepper_motor_top_pwm.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source stepper_motor_top_pwm.tcl -notrace
+# Log file: C:/Users/James Kibii/OneDrive/Dokumente/Vivado/Stepper_Motor/Stepper_Motor.runs/impl_1/stepper_motor_top_pwm.vdi
+# Journal file: C:/Users/James Kibii/OneDrive/Dokumente/Vivado/Stepper_Motor/Stepper_Motor.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source stepper_motor_top_pwm.tcl -notrace

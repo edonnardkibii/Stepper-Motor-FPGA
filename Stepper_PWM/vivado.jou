@@ -1,0 +1,262 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Jan 22 23:34:07 2021
+# Process ID: 3632
+# Current directory: C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3972 C:\Users\kibii\OneDrive\Studienkolleg\Vivado\Stepper_PWM\Stepper_PWM.xpr
+# Log file: C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/vivado.log
+# Journal file: C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.xpr
+update_compile_order -fileset sources_1
+close [ open C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/new/Stepper_top.v w ]
+add_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/new/Stepper_top.v
+update_compile_order -fileset sources_1
+create_bd_design "Stepper"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+set_property -dict [list CONFIG.PCW_USE_M_AXI_GP0 {0}] [get_bd_cells processing_system7_0]
+set_property location {1 206 -208} [get_bd_cells processing_system7_0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_cells processing_system7_0]
+make_bd_intf_pins_external  [get_bd_cells processing_system7_0]
+endgroup
+set_property name FCLK_CLK0 [get_bd_ports FCLK_CLK0_0]
+set_property name FCLK_RESET0_N [get_bd_ports FCLK_RESET0_N_0]
+save_bd_design
+make_wrapper -files [get_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/bd/Stepper/Stepper.bd] -top
+add_files -norecurse C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/bd/Stepper/hdl/Stepper_wrapper.v
+update_compile_order -fileset sources_1
+generate_target all [get_files  C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/bd/Stepper/Stepper.bd]
+catch { config_ip_cache -export [get_ips -all Stepper_processing_system7_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/bd/Stepper/Stepper.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/bd/Stepper/Stepper.bd]
+launch_runs -jobs 4 Stepper_processing_system7_0_0_synth_1
+export_simulation -of_objects [get_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/bd/Stepper/Stepper.bd] -directory C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.ip_user_files -ipstatic_source_dir C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.cache/compile_simlib/modelsim} {questa=C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.cache/compile_simlib/questa} {riviera=C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.cache/compile_simlib/riviera} {activehdl=C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/bd/Stepper/Stepper.bd] -top
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Stepper_top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/bd/Stepper/Stepper.bd}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Stepper_top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/new/Stepper_top.v] -no_script -reset -force -quiet
+remove_files  C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/new/Stepper_top.v
+file delete -force C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_PWM/Stepper_PWM.srcs/sources_1/new/Stepper_top.v
+update_compile_order -fileset sources_1
+set_property top Stepper_wrapper [current_fileset]
+update_compile_order -fileset sources_1
+create_project SPWM C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM -part xc7z010iclg400-1L
+file mkdir C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/new
+close [ open C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/new/SPWM.v w ]
+add_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/new/SPWM.v
+update_compile_order -fileset sources_1
+current_project Stepper_PWM
+current_project SPWM
+close [ open C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/new/SPWM_tb.v w ]
+add_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/new/SPWM_tb.v
+update_compile_order -fileset sources_1
+current_project Stepper_PWM
+current_project SPWM
+update_compile_order -fileset sources_1
+close [ open C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/new/sine_wave.mem w ]
+add_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/new/sine_wave.mem
+current_project Stepper_PWM
+current_project SPWM
+file mkdir C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/constrs_1
+file mkdir C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/constrs_1/new
+close [ open C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/constrs_1/new/Red_Pitaya.xdc w ]
+add_files -fileset constrs_1 C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/constrs_1/new/Red_Pitaya.xdc
+current_project Stepper_PWM
+current_project SPWM
+create_bd_design "System"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+set_property -dict [list CONFIG.PCW_USE_M_AXI_GP0 {0}] [get_bd_cells processing_system7_0]
+startgroup
+make_bd_pins_external  [get_bd_cells processing_system7_0]
+make_bd_intf_pins_external  [get_bd_cells processing_system7_0]
+endgroup
+set_property name DDR [get_bd_intf_ports DDR_0]
+undo
+undo
+undo
+set_property -dict [list CONFIG.PCW_USE_M_AXI_GP0 {0}] [get_bd_cells processing_system7_0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins processing_system7_0/FCLK_CLK0]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins processing_system7_0/FCLK_RESET0_N]
+endgroup
+set_property name FCLK_CLK0 [get_bd_ports FCLK_CLK0_0]
+set_property name FCLK_RESET0_N [get_bd_ports FCLK_RESET0_N_0]
+save_bd_design
+generate_target all [get_files  C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/System.bd]
+catch { config_ip_cache -export [get_ips -all System_processing_system7_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/System.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/System.bd]
+launch_runs -jobs 4 System_processing_system7_0_0_synth_1
+export_simulation -of_objects [get_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/System.bd] -directory C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.ip_user_files -ipstatic_source_dir C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.cache/compile_simlib/modelsim} {questa=C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.cache/compile_simlib/questa} {riviera=C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.cache/compile_simlib/riviera} {activehdl=C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+make_wrapper -files [get_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/System.bd] -top
+add_files -norecurse C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/hdl/System_wrapper.v
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top System_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/System.bd]
+synth_design -rtl -name rtl_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/bd/System/System.bd]
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+current_project Stepper_PWM
+close_project
+close [ open C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/new/Stepper_top.v w ]
+add_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/SPWM/SPWM.srcs/sources_1/new/Stepper_top.v
+update_compile_order -fileset sources_1
+create_project Stepper_Motor_PWM C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM -part xc7z010clg400-1
+file mkdir C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/constrs_1
+file mkdir C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/constrs_1/new
+close [ open C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/constrs_1/new/Red_Pitaya.xdc w ]
+add_files -fileset constrs_1 C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/constrs_1/new/Red_Pitaya.xdc
+current_project SPWM
+current_project Stepper_Motor_PWM
+file mkdir C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/new
+close [ open C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/new/spwm.v w ]
+add_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/new/spwm.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/new/stepper_motor_top.v w ]
+add_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/new/stepper_motor_top.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/new/spwm_tb.v w ]
+add_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/new/spwm_tb.v
+update_compile_order -fileset sources_1
+current_project SPWM
+current_project Stepper_Motor_PWM
+current_project SPWM
+current_project Stepper_Motor_PWM
+update_compile_order -fileset sources_1
+close [ open C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/new/sine_wave.mem w ]
+add_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/new/sine_wave.mem
+current_project SPWM
+current_project Stepper_Motor_PWM
+create_bd_design "system"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+set_property -dict [list CONFIG.PCW_USE_M_AXI_GP0 {0}] [get_bd_cells processing_system7_0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins processing_system7_0/FCLK_CLK0]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins processing_system7_0/FCLK_RESET0_N]
+endgroup
+set_property name FCLK_CLK0 [get_bd_ports FCLK_CLK0_0]
+set_property name FCLK_RESET0_N [get_bd_ports FCLK_RESET0_N_0]
+generate_target all [get_files  C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/bd/system/system.bd]
+catch { config_ip_cache -export [get_ips -all system_processing_system7_0_0] }
+export_ip_user_files -of_objects [get_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/bd/system/system.bd]
+launch_runs -jobs 4 system_processing_system7_0_0_synth_1
+export_simulation -of_objects [get_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/bd/system/system.bd] -directory C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.ip_user_files -ipstatic_source_dir C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.cache/compile_simlib/modelsim} {questa=C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.cache/compile_simlib/questa} {riviera=C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.cache/compile_simlib/riviera} {activehdl=C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+current_project SPWM
+current_project Stepper_Motor_PWM
+current_project SPWM
+close_project
+open_bd_design {C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/bd/system/system.bd}
+make_wrapper -files [get_files C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/bd/system/system.bd] -top
+add_files -norecurse C:/Users/kibii/OneDrive/Studienkolleg/Vivado/Stepper_Motor_PWM/Stepper_Motor_PWM.srcs/sources_1/bd/system/hdl/system_wrapper.v
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top stepper_motor_top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+close_design
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+launch_simulation
+source spwm_tb.tcl
+set_property -name {xsim.simulate.runtime} -value {100us} -objects [get_filesets sim_1]
+close_sim
+launch_simulation
+source spwm_tb.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_sim
+launch_simulation
+source spwm_tb.tcl
+close_sim

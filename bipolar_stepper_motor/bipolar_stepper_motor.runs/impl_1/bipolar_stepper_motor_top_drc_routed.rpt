@@ -1,0 +1,71 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Mon Mar  1 23:03:00 2021
+| Host         : DESKTOP-P7J4UQ2 running 64-bit major release  (build 9200)
+| Command      : report_drc -file bipolar_stepper_motor_top_drc_routed.rpt -pb bipolar_stepper_motor_top_drc_routed.pb -rpx bipolar_stepper_motor_top_drc_routed.rpx
+| Design       : bipolar_stepper_motor_top
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 7
++--------+----------+--------------------------+------------+
+| Rule   | Severity | Description              | Violations |
++--------+----------+--------------------------+------------+
+| BUFC-1 | Warning  | Input Buffer Connections | 7          |
++--------+----------+--------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+BUFC-1#1 Warning
+Input Buffer Connections  
+Input buffer exp_iobuf_n[0].i_iobufn/IBUF (in exp_iobuf_n[0].i_iobufn macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#2 Warning
+Input Buffer Connections  
+Input buffer exp_iobuf_n[1].i_iobufn/IBUF (in exp_iobuf_n[1].i_iobufn macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#3 Warning
+Input Buffer Connections  
+Input buffer exp_iobuf_n[2].i_iobufn/IBUF (in exp_iobuf_n[2].i_iobufn macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#4 Warning
+Input Buffer Connections  
+Input buffer exp_iobuf_n[3].i_iobufn/IBUF (in exp_iobuf_n[3].i_iobufn macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#5 Warning
+Input Buffer Connections  
+Input buffer exp_iobuf_n[4].i_iobufn/IBUF (in exp_iobuf_n[4].i_iobufn macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#6 Warning
+Input Buffer Connections  
+Input buffer exp_iobuf_n[5].i_iobufn/IBUF (in exp_iobuf_n[5].i_iobufn macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#7 Warning
+Input Buffer Connections  
+Input buffer exp_iobuf_p[2].i_iobufp/IBUF (in exp_iobuf_p[2].i_iobufp macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+

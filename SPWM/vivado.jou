@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Jan 26 11:39:52 2021
+# Process ID: 5428
+# Current directory: C:/Users/James Kibii/OneDrive/Dokumente/Vivado/SPWM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2912 C:\Users\James Kibii\OneDrive\Dokumente\Vivado\SPWM\SPWM.xpr
+# Log file: C:/Users/James Kibii/OneDrive/Dokumente/Vivado/SPWM/vivado.log
+# Journal file: C:/Users/James Kibii/OneDrive/Dokumente/Vivado/SPWM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/James Kibii/OneDrive/Dokumente/Vivado/SPWM/SPWM.xpr}
+update_compile_order -fileset sources_1

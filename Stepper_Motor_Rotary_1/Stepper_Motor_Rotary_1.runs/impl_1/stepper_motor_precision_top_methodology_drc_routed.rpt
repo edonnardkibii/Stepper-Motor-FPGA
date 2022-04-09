@@ -1,0 +1,165 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Tue Feb 23 02:26:26 2021
+| Host         : DESKTOP-P7J4UQ2 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file stepper_motor_precision_top_methodology_drc_routed.rpt -pb stepper_motor_precision_top_methodology_drc_routed.pb -rpx stepper_motor_precision_top_methodology_drc_routed.rpx
+| Design       : stepper_motor_precision_top
+| Device       : xc7z007sclg400-1
+| Speed File   : -1
+| Design State : Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 26
++-----------+----------+--------------------------+------------+
+| Rule      | Severity | Description              | Violations |
++-----------+----------+--------------------------+------------+
+| TIMING-23 | Warning  | Combinational loop found | 26         |
++-----------+----------+--------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-23#1 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between i_spwm/g0_b8_i_1/I0 and i_spwm/g0_b8_i_1/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#2 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between i_spwm/i1_carry/S[1] and i_spwm/i1_carry/CO[3] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#3 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between i_spwm/i2_carry/S[2] and i_spwm/i2_carry/O[2] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#4 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between i_spwm/i2_carry__0/S[0] and i_spwm/i2_carry__0/O[0] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#5 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between i_spwm/i2_carry__0/S[1] and i_spwm/i2_carry__0/O[1] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#6 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between i_spwm/i2_carry__0/S[2] and i_spwm/i2_carry__0/O[2] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#7 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between i_spwm/i2_carry__1/S[0] and i_spwm/i2_carry__1/O[0] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#8 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between i_spwm/i2_carry__1/S[1] and i_spwm/i2_carry__1/O[1] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#9 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between i_spwm/i2_carry__2/S[0] and i_spwm/i2_carry__2/O[0] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#10 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between i_spwm/i2_carry__2/S[1] and i_spwm/i2_carry__2/O[1] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#11 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between i_spwm/i2_carry__2/S[2] and i_spwm/i2_carry__2/O[2] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#12 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between i_spwm/i2_carry__3/S[0] and i_spwm/i2_carry__3/O[0] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#13 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between i_spwm/i2_carry__3/S[1] and i_spwm/i2_carry__3/O[1] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#14 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between i_spwm/i2_carry__3/S[2] and i_spwm/i2_carry__3/O[2] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#15 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between i_spwm/i2_carry__4/S[0] and i_spwm/i2_carry__4/O[0] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#16 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between i_spwm/i2_carry__4/S[1] and i_spwm/i2_carry__4/O[1] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#17 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between i_spwm/i2_carry__5/S[0] and i_spwm/i2_carry__5/O[0] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#18 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between i_spwm/i2_carry__5/S[1] and i_spwm/i2_carry__5/O[1] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#19 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between i_spwm/i2_carry__5/S[2] and i_spwm/i2_carry__5/O[2] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#20 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between i_spwm/i2_carry__6/S[0] and i_spwm/i2_carry__6/O[0] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#21 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between i_spwm/i2_carry__6/S[1] and i_spwm/i2_carry__6/O[1] to disable the timing loop
+Related violations: <none>
+
+TIMING-23#22 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between i_spwm/pwm_a_p0_carry__0_i_12/I0 and i_spwm/pwm_a_p0_carry__0_i_12/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#23 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between i_spwm/pwm_a_p0_carry__0_i_15/I0 and i_spwm/pwm_a_p0_carry__0_i_15/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#24 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between i_spwm/pwm_a_p0_carry__0_i_20/I0 and i_spwm/pwm_a_p0_carry__0_i_20/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#25 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between i_spwm/pwm_a_p0_carry__0_i_9/I1 and i_spwm/pwm_a_p0_carry__0_i_9/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#26 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between i_spwm/pwm_a_p0_carry_i_9/I0 and i_spwm/pwm_a_p0_carry_i_9/O to disable the timing loop
+Related violations: <none>
+
+

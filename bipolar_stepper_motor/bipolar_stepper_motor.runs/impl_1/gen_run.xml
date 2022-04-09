@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1614636015">
+  <File Type="BITSTR-BMM" Name="bipolar_stepper_motor_top_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="bipolar_stepper_motor_top_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="bipolar_stepper_motor_top_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="bipolar_stepper_motor_top_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="bipolar_stepper_motor_top.tcl"/>
+  <File Type="OPT-TIMING" Name="bipolar_stepper_motor_top_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="bipolar_stepper_motor_top_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="bipolar_stepper_motor_top_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="bipolar_stepper_motor_top_reports.tcl"/>
+  <File Type="OPT-DRC" Name="bipolar_stepper_motor_top_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="bipolar_stepper_motor_top.hwdef"/>
+  <File Type="PWROPT-DCP" Name="bipolar_stepper_motor_top_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="bipolar_stepper_motor_top_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="bipolar_stepper_motor_top_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="bipolar_stepper_motor_top_placed.dcp"/>
+  <File Type="PLACE-IO" Name="bipolar_stepper_motor_top_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="bipolar_stepper_motor_top_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="bipolar_stepper_motor_top_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="bipolar_stepper_motor_top_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="bipolar_stepper_motor_top_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="bipolar_stepper_motor_top_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="bipolar_stepper_motor_top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="bipolar_stepper_motor_top.bgn"/>
+  <File Type="PLACE-TIMING" Name="bipolar_stepper_motor_top_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="bipolar_stepper_motor_top_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="bipolar_stepper_motor_top.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="bipolar_stepper_motor_top_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="bipolar_stepper_motor_top_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="bipolar_stepper_motor_top_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="bipolar_stepper_motor_top.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="bipolar_stepper_motor_top_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="bipolar_stepper_motor_top_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="bipolar_stepper_motor_top_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="bipolar_stepper_motor_top_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="bipolar_stepper_motor_top_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="bipolar_stepper_motor_top_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="bipolar_stepper_motor_top.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="bipolar_stepper_motor_top_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="bipolar_stepper_motor_top.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="bipolar_stepper_motor_top_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="bipolar_stepper_motor_top_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="bipolar_stepper_motor_top.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="bipolar_stepper_motor_top_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="bipolar_stepper_motor_top_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="bipolar_stepper_motor_top_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="bipolar_stepper_motor_top_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="bipolar_stepper_motor_top_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="bipolar_stepper_motor_top_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="bipolar_stepper_motor_top_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="bipolar_stepper_motor_top_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="bipolar_stepper_motor_top_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="bipolar_stepper_motor_top_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="bipolar_stepper_motor_top_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="bipolar_stepper_motor_top_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="bipolar_stepper_motor_top_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="bipolar_stepper_motor_top_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="bipolar_stepper_motor_top_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="bipolar_stepper_motor_top_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="bipolar_stepper_motor_top_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="bipolar_stepper_motor_top_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="bipolar_stepper_motor_top_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="bipolar_stepper_motor_top.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="bipolar_stepper_motor_top_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="bipolar_stepper_motor_top.rbt"/>
+  <File Type="BITSTR-NKY" Name="bipolar_stepper_motor_top.nky"/>
+  <File Type="BG-DRC" Name="bipolar_stepper_motor_top.drc"/>
+  <File Type="RDI-RDI" Name="bipolar_stepper_motor_top.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/system/system.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/logic_ctrl.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/rotary_encoder.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/speed_ctrl.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/step_changer.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/system/hdl/system_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/bipolar_stepper_motor_top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/bipolar_stepper_motor_tb.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="bipolar_stepper_motor_top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/Red_Pitaya.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="system_processing_system7_0_0"/>
+</GenRun>

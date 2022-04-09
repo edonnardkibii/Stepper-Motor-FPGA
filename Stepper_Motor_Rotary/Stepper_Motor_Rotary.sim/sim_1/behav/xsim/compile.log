@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.srcs/sources_1/new/rotary_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rotary_encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.srcs/sources_1/new/spwm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spwm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.srcs/sources_1/new/steppermotor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module steppermotor_tb

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Feb 19 15:14:12 2021
+# Process ID: 10132
+# Current directory: C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Dig
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11372 C:\Users\james\OneDrive\Dokumente\Vivado\SoC_Projects\Stepper_Motor_Dig\Stepper_Motor_Dig.xpr
+# Log file: C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Dig/vivado.log
+# Journal file: C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Dig\vivado.jou
+#-----------------------------------------------------------
+start_gui

@@ -1,0 +1,7 @@
+Running: xsim.dir/stepper_motor_rotary_top_behav/xsimk.exe -simmode gui -wdb stepper_motor_rotary_top_behav.wdb -simrunnum 0 -socket 64533
+Design successfully loaded
+Design Loading Memory Usage: 25224 KB (Peak: 25224 KB)
+Design Loading CPU Usage: 108 ms
+Simulation completed
+Simulation Memory Usage: 41028 KB (Peak: 41028 KB)
+Simulation CPU Usage: 561 ms

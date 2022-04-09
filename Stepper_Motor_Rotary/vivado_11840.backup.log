@@ -1,0 +1,548 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Feb 24 20:06:40 2021
+# Process ID: 11840
+# Current directory: C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10088 C:\Users\james\OneDrive\Dokumente\Vivado\SoC_Projects\Stepper_Motor_Rotary\Stepper_Motor_Rotary.xpr
+# Log file: C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/vivado.log
+# Journal file: C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 861.762 ; gain = 125.922
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'steppermotor_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim/cos_wave.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim/sine_wave.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L smartconnect_v1_0 -L axi_protocol_checker_v2_0_3 -L axi_vip_v1_1_3 -L processing_system7_vip_v1_0_5 -L xilinx_vip -prj steppermotor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.srcs/sources_1/new/rotary_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rotary_encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.srcs/sources_1/new/spwm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spwm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.srcs/sources_1/new/steppermotor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module steppermotor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto f6db626ce18449638a15e500de25aa7c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot steppermotor_tb_behav xil_defaultlib.steppermotor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spwm
+Compiling module xil_defaultlib.rotary_encoder
+Compiling module xil_defaultlib.steppermotor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot steppermotor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "steppermotor_tb_behav -key {Behavioral:sim_1:Functional:steppermotor_tb} -tclbatch {steppermotor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source steppermotor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'steppermotor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100us
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 914.559 ; gain = 19.848
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'steppermotor_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim/cos_wave.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim/sine_wave.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L smartconnect_v1_0 -L axi_protocol_checker_v2_0_3 -L axi_vip_v1_1_3 -L processing_system7_vip_v1_0_5 -L xilinx_vip -prj steppermotor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.srcs/sources_1/new/rotary_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rotary_encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.srcs/sources_1/new/spwm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spwm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.srcs/sources_1/new/steppermotor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module steppermotor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto f6db626ce18449638a15e500de25aa7c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot steppermotor_tb_behav xil_defaultlib.steppermotor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spwm
+Compiling module xil_defaultlib.rotary_encoder
+Compiling module xil_defaultlib.steppermotor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot steppermotor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "steppermotor_tb_behav -key {Behavioral:sim_1:Functional:steppermotor_tb} -tclbatch {steppermotor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source steppermotor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'steppermotor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100us
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 948.742 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'steppermotor_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim/cos_wave.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim/sine_wave.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L smartconnect_v1_0 -L axi_protocol_checker_v2_0_3 -L axi_vip_v1_1_3 -L processing_system7_vip_v1_0_5 -L xilinx_vip -prj steppermotor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.srcs/sources_1/new/rotary_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rotary_encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.srcs/sources_1/new/spwm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spwm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.srcs/sources_1/new/steppermotor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module steppermotor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto f6db626ce18449638a15e500de25aa7c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot steppermotor_tb_behav xil_defaultlib.steppermotor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spwm
+Compiling module xil_defaultlib.rotary_encoder
+Compiling module xil_defaultlib.steppermotor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot steppermotor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "steppermotor_tb_behav -key {Behavioral:sim_1:Functional:steppermotor_tb} -tclbatch {steppermotor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source steppermotor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'steppermotor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100us
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 948.742 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'steppermotor_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim/cos_wave.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim/sine_wave.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L smartconnect_v1_0 -L axi_protocol_checker_v2_0_3 -L axi_vip_v1_1_3 -L processing_system7_vip_v1_0_5 -L xilinx_vip -prj steppermotor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.srcs/sources_1/new/rotary_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rotary_encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.srcs/sources_1/new/spwm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spwm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.srcs/sources_1/new/steppermotor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module steppermotor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto f6db626ce18449638a15e500de25aa7c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot steppermotor_tb_behav xil_defaultlib.steppermotor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spwm
+Compiling module xil_defaultlib.rotary_encoder
+Compiling module xil_defaultlib.steppermotor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot steppermotor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "steppermotor_tb_behav -key {Behavioral:sim_1:Functional:steppermotor_tb} -tclbatch {steppermotor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source steppermotor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'steppermotor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100us
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 951.168 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'steppermotor_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim/cos_wave.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim/sine_wave.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L smartconnect_v1_0 -L axi_protocol_checker_v2_0_3 -L axi_vip_v1_1_3 -L processing_system7_vip_v1_0_5 -L xilinx_vip -prj steppermotor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.srcs/sources_1/new/rotary_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rotary_encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.srcs/sources_1/new/spwm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spwm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.srcs/sources_1/new/steppermotor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module steppermotor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto f6db626ce18449638a15e500de25aa7c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot steppermotor_tb_behav xil_defaultlib.steppermotor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spwm
+Compiling module xil_defaultlib.rotary_encoder
+Compiling module xil_defaultlib.steppermotor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot steppermotor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "steppermotor_tb_behav -key {Behavioral:sim_1:Functional:steppermotor_tb} -tclbatch {steppermotor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source steppermotor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'steppermotor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100us
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 955.922 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'steppermotor_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim/cos_wave.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim/sine_wave.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L smartconnect_v1_0 -L axi_protocol_checker_v2_0_3 -L axi_vip_v1_1_3 -L processing_system7_vip_v1_0_5 -L xilinx_vip -prj steppermotor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.srcs/sources_1/new/rotary_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rotary_encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.srcs/sources_1/new/spwm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spwm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.srcs/sources_1/new/steppermotor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module steppermotor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto f6db626ce18449638a15e500de25aa7c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot steppermotor_tb_behav xil_defaultlib.steppermotor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spwm
+Compiling module xil_defaultlib.rotary_encoder
+Compiling module xil_defaultlib.steppermotor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot steppermotor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "steppermotor_tb_behav -key {Behavioral:sim_1:Functional:steppermotor_tb} -tclbatch {steppermotor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source steppermotor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'steppermotor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100us
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 957.727 ; gain = 1.805
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'steppermotor_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim/cos_wave.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim/sine_wave.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L smartconnect_v1_0 -L axi_protocol_checker_v2_0_3 -L axi_vip_v1_1_3 -L processing_system7_vip_v1_0_5 -L xilinx_vip -prj steppermotor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.srcs/sources_1/new/rotary_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rotary_encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.srcs/sources_1/new/spwm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spwm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.srcs/sources_1/new/steppermotor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module steppermotor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto f6db626ce18449638a15e500de25aa7c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot steppermotor_tb_behav xil_defaultlib.steppermotor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spwm
+Compiling module xil_defaultlib.rotary_encoder
+Compiling module xil_defaultlib.steppermotor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot steppermotor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "steppermotor_tb_behav -key {Behavioral:sim_1:Functional:steppermotor_tb} -tclbatch {steppermotor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source steppermotor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'steppermotor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100us
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 964.863 ; gain = 6.480
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'steppermotor_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim/cos_wave.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim/sine_wave.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L smartconnect_v1_0 -L axi_protocol_checker_v2_0_3 -L axi_vip_v1_1_3 -L processing_system7_vip_v1_0_5 -L xilinx_vip -prj steppermotor_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.srcs/sources_1/new/rotary_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rotary_encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.srcs/sources_1/new/spwm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spwm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.srcs/sources_1/new/steppermotor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module steppermotor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto f6db626ce18449638a15e500de25aa7c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot steppermotor_tb_behav xil_defaultlib.steppermotor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.spwm
+Compiling module xil_defaultlib.rotary_encoder
+Compiling module xil_defaultlib.steppermotor_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot steppermotor_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "steppermotor_tb_behav -key {Behavioral:sim_1:Functional:steppermotor_tb} -tclbatch {steppermotor_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source steppermotor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'steppermotor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100us
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 968.168 ; gain = 1.973
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Wed Feb 24 20:26:57 2021] Launched synth_1...
+Run output will be captured here: C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Wed Feb 24 20:31:50 2021] Launched synth_1...
+Run output will be captured here: C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Wed Feb 24 20:34:23 2021] Launched impl_1...
+Run output will be captured here: C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Wed Feb 24 20:37:49 2021] Launched synth_1...
+Run output will be captured here: C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Wed Feb 24 20:38:41 2021] Launched impl_1...
+Run output will be captured here: C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Feb 24 20:41:08 2021] Launched impl_1...
+Run output will be captured here: C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/Stepper_Motor_Rotary/Stepper_Motor_Rotary.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 24 20:59:01 2021...

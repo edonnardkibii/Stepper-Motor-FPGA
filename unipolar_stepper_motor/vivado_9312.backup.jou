@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Mar  2 00:03:05 2021
+# Process ID: 9312
+# Current directory: C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/unipolar_stepper_motor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6680 C:\Users\james\OneDrive\Dokumente\Vivado\SoC_Projects\unipolar_stepper_motor\unipolar_stepper_motor.xpr
+# Log file: C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/unipolar_stepper_motor/vivado.log
+# Journal file: C:/Users/james/OneDrive/Dokumente/Vivado/SoC_Projects/unipolar_stepper_motor\vivado.jou
+#-----------------------------------------------------------
+start_gui
